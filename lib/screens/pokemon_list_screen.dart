@@ -48,10 +48,10 @@ class _PokemonListScreenState extends State<PokemonListScreen> {
 
       if (_useDio) {
         // ใช้ Dio
-        pokemonList = await _dioService.getPokemonList(limit: 50);
+        pokemonList = await _dioService.getPokemonList(limit: 100);
       } else {
         // ใช้ HTTP
-        pokemonList = await _httpService.getPokemonList(limit: 50);
+        pokemonList = await _httpService.getPokemonList(limit: 100);
       }
 
       // หยุดจับเวลา

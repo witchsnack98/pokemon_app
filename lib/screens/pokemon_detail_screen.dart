@@ -207,6 +207,11 @@ class _PokemonDetailScreenState extends State<PokemonDetailScreen> {
                       '${_detail!.heightInMeters} m',
                       Icons.height,
                     ),
+                    _buildInfoCard(
+                      'Base Exp',
+                      '${_detail!.baseExperience}',
+                      Icons.bolt,
+                    ),
                   ],
                 ),
 

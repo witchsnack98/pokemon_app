@@ -29,7 +29,7 @@ class _PokemonFreezedScreenState extends State<PokemonFreezedScreen> {
     });
 
     try {
-      final list = await _service.getPokemonList(limit: 50);
+      final list = await _service.getPokemonList(limit: 100);
 
       // แปลงเป็น PokemonFreezed
       final freezedList = list

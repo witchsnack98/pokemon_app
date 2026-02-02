@@ -10,6 +10,8 @@ class PokemonDetail {
   final String name;
   final int height;
   final int weight;
+  @JsonKey(name: 'base_experience')
+  final int baseExperience;
 
   // ⬇️ Nested objects - ต้องใช้ explicitToJson: true
   final List<PokemonType> types;
@@ -21,6 +23,7 @@ class PokemonDetail {
     required this.name,
     required this.height,
     required this.weight,
+    required this.baseExperience,
     required this.types,
     required this.stats,
     required this.sprites,
