@@ -33,6 +33,7 @@ dependencies:
   http: ^1.2.0  # เพิ่มบรรทัดนี้!
   dio: ^5.4.0         # เพิ่มบรรทัดนี้!
   json_annotation: ^4.8.1  # เพิ่ม!
+  freezed_annotation: ^2.4.1  # เพิ่ม!
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
@@ -49,6 +50,7 @@ dev_dependencies:
   flutter_lints: ^5.0.0
   build_runner: ^2.4.8      # เพิ่ม!
   json_serializable: ^6.7.1  # เพิ่ม!
+  freezed: ^2.4.7  # เพิ่ม!
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

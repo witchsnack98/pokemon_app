@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:pokemon_app/screens/pokemon_freezed_screen.dart';
 import 'screens/pokemon_list_screen.dart';
-
+import 'screens/pokemon_freezed_screen.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
         useMaterial3: true,
       ),
-      home: const PokemonListScreen(),
+      home: const PokemonFreezedScreen(),
     );
   }
 }
