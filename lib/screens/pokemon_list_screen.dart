@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/pokemon.dart';
 import '../services/pokemon_service.dart';
 import '../services/dio_pokemon_service.dart';
+import 'pokemon_detail_screen.dart';
 
 /// หน้าจอแสดงรายการ Pokemon
 /// สามารถสลับระหว่าง HTTP และ Dio ได้
@@ -239,6 +240,14 @@ class _PokemonListScreenState extends State<PokemonListScreen> {
         borderRadius: BorderRadius.circular(12),
       ),
       child: ListTile(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => PokemonDetailScreen(pokemon: pokemon),
+            ),
+          );
+        },
         contentPadding: const EdgeInsets.all(8),
         leading: Container(
           width: 60,
